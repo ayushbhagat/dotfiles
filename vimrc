@@ -67,6 +67,9 @@ nmap s <Plug>(easymotion-bd-w)
 "========================================================================
 "Other commands and shortcuts
 
+"Select current word and replace it
+:nnoremap <Leader>r :%s/\<<C-r><C-w>\>/
+
 "Split navigation.
 nnoremap <leader>v :vsplit<CR><C-W><C-L>
 nnoremap <leader>h :split<CR><C-W><C-J>
@@ -109,6 +112,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+"Allow scrolling using mouse
+set mouse=a
+
 "========================================================================
 "Some general settings
 
@@ -120,7 +126,7 @@ set incsearch
 set laststatus=2
 set autowrite
 set hlsearch
-set nu
+set relativenumber
 set encoding=utf-8
 set fileencoding=utf-8
 set cursorline
@@ -142,8 +148,8 @@ set diffopt+=vertical
 "Display extra whitespace.
 set list listchars=tab:»·,trail:·,nbsp:·
 
-"Make it obvious where 80 characters is.
-set textwidth=80
+"Make it obvious where 100 characters is.
+set textwidth=100
 set colorcolumn=+1
 
 "Colorscheme
