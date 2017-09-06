@@ -42,7 +42,10 @@ alias reload_tex='sudo texhash'
 export PATH=/Users/Ayush/pebble-dev/PebbleSDK-current/bin:$PATH
 
 # Android.
-export PATH=/usr/local/android-sdk/platform-tools:$PATH
+export ANDROID_HOME=/usr/local/android-sdk
+export PATH=$ANDROID_HOME:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
 
 # GTKMM.
 export PKG_CONFIG_PATH=/usr/local/Cellar/pkg-config

@@ -51,6 +51,7 @@ call unite#custom#profile('default', 'context', {
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 nnoremap <leader>uf :Unite file -start-insert<CR>
+nnoremap <leader>ur :Unite file_rec -start-insert<CR>
 nnoremap <leader>ub :Unite buffer -start-insert<CR>
 
 "Airline
